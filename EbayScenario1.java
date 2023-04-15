@@ -33,7 +33,9 @@ public class EbayScenario1 {
        wait = new WebDriverWait(driver, 10);
        WebElement CellPhonesAccessories =driver.findElement(By.xpath("//*[@id=\"s0-16-12-0-1[0]-0-0-27[1]-0-toggle-button\"]"));
        CellPhonesAccessories.click();
-       
+		
+	
+       //used to intialise scrolling slowly
        for(int i=0;i<10;i++) {
            js.executeScript("window.scrollBy(0,13)");
            try {
